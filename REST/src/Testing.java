@@ -3,9 +3,9 @@ import java.io.*;
 public class Testing {
     public static void main(String[] args) {
             Testing a = new Testing();
-            a.Filez();
+            a.filez();
     }
-    public void Filez(){
+    public void filez(){
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("retry.txt"));
             writer.write("Hi Callum");
@@ -20,5 +20,10 @@ public class Testing {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+}
+class Test{
+    public void A(){
+        System.out.println("pushing");
     }
 }
